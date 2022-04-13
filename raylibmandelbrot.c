@@ -5,7 +5,6 @@
 #include <time.h>
 #include <math.h>
 
-#define GLSL_VERSION 330
 #define SHADER_NF_ERROR_V "ERROR CHECK LOG"
 
 int main() {
