@@ -1,3 +1,3 @@
 #### raylibmandelbrot
 
-A simple Mandelbrot viewer i wrote in C with raylib.
+A simple Mandelbrot viewer I wrote in C with raylib.
