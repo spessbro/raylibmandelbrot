@@ -5,8 +5,8 @@ in vec4 fragColor;
 
 out vec4 finalColor;
 
-uniform vec2 offset_combined;
-uniform vec2 screen_size;
+uniform vec2 offsetCombined;
+uniform vec2 screenSize;
 uniform float zoom;
 
 #define ITERATION_MAX 256
@@ -17,8 +17,8 @@ void main() {
     vec2 uv = gl_FragCoord.xy / screen_size;
 
     vec2 C = vec2(
-        (gl_FragCoord.x/screen_size.x)*zoom-offset_combined.x,
-        (gl_FragCoord.y/screen_size.y)*zoom-offset_combined.y
+        (gl_FragCoord.x/screenSize.x)*zoom-offsetCombined.x,
+        (gl_FragCoord.y/screenSize.y)*zoom-offsetCombined.y
         );
 
     vec2 Z    = vec2(0.0,0.0);
