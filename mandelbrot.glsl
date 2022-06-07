@@ -14,7 +14,7 @@ uniform float zoom;
 
 void main() {
 
-    vec2 uv = gl_FragCoord.xy / screen_size;
+    vec2 uv = gl_FragCoord.xy / screenSize;
 
     vec2 C = vec2(
         (gl_FragCoord.x/screenSize.x)*zoom-offsetCombined.x,

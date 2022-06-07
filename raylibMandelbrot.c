@@ -19,8 +19,8 @@ int main() {
 
     Shader mandelbrotShader = LoadShader(0, "mandelbrot.glsl");
 
-    int offsetCombinedLoc  = GetShaderLocation(mandelbrotShader, "offset_combined");
-    int screenCombinedLoc  = GetShaderLocation(mandelbrotShader, "screen_size");
+    int offsetCombinedLoc  = GetShaderLocation(mandelbrotShader, "offsetCombined");
+    int screenCombinedLoc  = GetShaderLocation(mandelbrotShader, "screenSize");
     int zoomLoc             = GetShaderLocation(mandelbrotShader, "zoom");
 
     bool errorState = false;
